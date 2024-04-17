@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "rules": {
+    "no-console": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true,
+        "allowHigherOrderFunctions": true
+      }
+    ]
+  },
+  "parserOptions": {
+    "sourceType": "script"
+  }
+}
