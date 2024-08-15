@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 37, 37);
+  transition: background-color 0.3s;
+}
+
+body.on {
+  background-color: rgb(239, 243, 220);
+}
+
+.dark-circle {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(50, 50, 50, 0.9) 0%,
+    rgba(50, 50, 50, 0.6) 70%,
+    rgba(50, 50, 50, 0) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.dark-circle::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.dark-circle.on {
+  background: radial-gradient(
+    circle,
+    rgba(80, 80, 80, 0.8) 0%,
+    rgba(80, 80, 80, 0.4) 70%,
+    rgba(80, 80, 80, 0) 100%
+  );
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.dark-circle.on::before {
+  background: radial-gradient(
+    circle,
+    rgba(50, 50, 50, 0.4) 0%,
+    rgba(50, 50, 50, 0) 80%
+  );
+}
