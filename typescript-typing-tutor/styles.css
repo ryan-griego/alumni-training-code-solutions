@@ -1,0 +1,47 @@
+/* Set a nice sans-serif font */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Center the text and apply some style */
+div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+span {
+  display: inline-block;
+  margin: 0 -0.1rem;
+}
+
+.underline-black {
+  border-bottom: 3px solid rgba(26, 26, 26, 0.553);
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: #333;
+}
+
+.underline-red {
+  border-bottom: 3px solid red;
+}
